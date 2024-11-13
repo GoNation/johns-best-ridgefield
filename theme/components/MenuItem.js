@@ -46,13 +46,14 @@ export const MenuItem = {
     heading: {
       fontSize: ['md', 'xl'],
       fontFamily: 'body',
-      color: 'gray.800',
+      color: 'primary',
       display: 'inline-flex',
       alignItems: 'center',
+      fontWeight: 'bold',
     },
     description: {
       fontSize: ['sm', 'md'],
-      color: 'gray.600',
+      color: 'dark',
       lineHeight: 'tall',
       fontFamily: 'body',
       maxWidth: 450,

@@ -15,7 +15,13 @@ const Events = ({ businessData, singleEvents = [], recurringEvents = [] }) => {
   if (allEvents.length === 0) {
     // Display a message and an icon when there are no events
     return (
-      <Center flexDirection="row" py={32} px={4} alignItems={'center'}>
+      <Center
+        id="happenings"
+        flexDirection="row"
+        py={32}
+        px={4}
+        alignItems={'center'}
+      >
         <Text fontSize="xl" mt={4} color="dark" fontFamily={'body'}>
           No events currently scheduled. Stay tuned for updates!
         </Text>
@@ -30,6 +36,7 @@ const Events = ({ businessData, singleEvents = [], recurringEvents = [] }) => {
       p={[4, 8, 12]}
       mx={'auto'}
       bg={'dark'}
+      id="happenings"
     >
       <Box maxW={'3xl'} mx={'auto'}>
         {events.map(event => (

@@ -1,7 +1,7 @@
 {
   "name": "Gallery",
   "basicInfo": {
-    "path": "/gallery",
+    "path": "#gallery",
     "seoPageTitle": "",
     "pageDescription": ""
   },

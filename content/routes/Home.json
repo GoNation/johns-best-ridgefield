@@ -2,8 +2,8 @@
   "name": "Home",
   "basicInfo": {
     "path": "/",
-    "seoPageTitle": "",
-    "pageDescription": ""
+    "seoPageTitle": "Home | John's Best Ridgefield",
+    "pageDescription": "John's Best Ridgefield"
   },
   "heroConfig": {
     "hidePageHero": true
@@ -24,11 +24,45 @@
   },
   "pageComponents": [
     {
-      "componentName": "Gallery",
-      "identifier": "Homepage Hero",
+      "componentName": "Hero",
+      "storyName": "Homepage hero",
+      "configName": "heroConfig",
+      "variation": "heroConfig"
+    },
+    {
+      "componentName": "ShoutCard"
+    },
+    {
+      "componentName": "SideBySideImage",
+      "storyName": "about page story",
+      "sideBySideVariation": "default",
+      "contentVariation": "sideBySideReversed",
+      "imageVariation": "default",
       "config": {
-        "id": "gallery"
+        "reversed": false,
+        "ignoreQuery": true
       }
+    },
+    {
+      "componentName": "Menu",
+      "configName": "menuConfigA",
+      "id": "menu"
+    },
+    {
+      "componentName": "Menu",
+      "configName": "menuConfigB",
+      "id": "catering"
+    },
+    {
+      "componentName": "Gallery",
+      "configName": "galleryConfig"
+    },
+    {
+      "componentName": "Events"
+    },
+    {
+      "componentName": "ContactPageLayout",
+      "configName": "contactPageLayoutConfig"
     }
   ]
 }

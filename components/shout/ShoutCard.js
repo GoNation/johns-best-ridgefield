@@ -33,7 +33,7 @@ export default function ShoutCard({ data }) {
     <Box
       p={[8, 8, 8]}
       py={[12, '', '', 12]}
-      bg={'gray.800'}
+      bg={'primary'}
       sx={{
         position: 'relative',
         _before: {

@@ -16,11 +16,8 @@ export const CustomForm = {
     heading: {
       as: 'h2',
       textAlign: 'center',
-      fontSize: { base: '4xl', lg: 'xl', xl: '4xl' },
       mb: 1,
       fontWeight: 300,
-      textTransform: 'capitalize',
-      color: 'gray.800',
     },
     infoSection: {
       my: 4,

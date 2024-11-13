@@ -8,7 +8,6 @@ export const Menu = {
       // backgroundImage: `url(https://www.transparenttextures.com/patterns/grilled-noise.png)`,
     },
     heading: {
-      display: 'none',
       as: 'h2',
       textAlign: 'center',
       fontSize: { base: '4xl', lg: '2xl', xl: '6xl' },

@@ -1,7 +1,7 @@
 {
   "name": "About",
   "basicInfo": {
-    "path": "/about",
+    "path": "#about",
     "seoPageTitle": "",
     "pageDescription": ""
   },

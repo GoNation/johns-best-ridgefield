@@ -2,6 +2,9 @@ export const Masonry = {
   baseStyle: {
     container: {
       p: 4,
+      id: 'gallery',
+      borderTop: '1px solid',
+      borderColor: 'primary',
     },
     flexOuter: {},
     flexInner: {

@@ -1,11 +1,12 @@
 {
-  "name": "",
+  "name": "Happenings",
   "basicInfo": {
+    "path": "#happenings",
     "seoPageTitle": "",
     "pageDescription": ""
   },
   "navVisibility": {
-    "order": 6
+    "order": 4
   },
   "advancedSettings": {
     "fetchingStrategy": "static",
@@ -17,5 +18,10 @@
       "gallery": true
     }
   },
-  "pageComponents": []
+  "pageComponents": [
+    {
+      "componentName": "AlbumGallery",
+      "configName": "galleryConfig"
+    }
+  ]
 }

@@ -5,7 +5,7 @@ import TabsView from './tabsView';
 import AllInOnce from './allIn';
 import useMenu from 'hooks/useMenu';
 
-const Menu = ({ menuData, mode, config = {}, business }) => {
+const Menu = ({ menuData, mode, config = {}, business, id }) => {
   const variant = config;
   const styles = useStyleConfig('Menu', { variant });
   const { menu, isLoading } = useMenu(null, config?.poweredList || 3);
@@ -60,8 +60,10 @@ const Menu = ({ menuData, mode, config = {}, business }) => {
   };
 
   return (
-    <Box id="menu" as="section" {...styles.container}>
-      <Heading {...styles.heading}>Menu</Heading>
+    <Box id={id || 'menu'} as="section" {...styles.container}>
+      <Heading {...styles.heading}>
+        {menuToRender?.section?.name || 'Menu'}
+      </Heading>
       {menuToRender?.mode && getRenderType()}
     </Box>
   );

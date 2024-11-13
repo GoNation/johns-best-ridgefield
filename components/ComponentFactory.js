@@ -133,6 +133,7 @@ const componentFactory = (componentConfig, commonData, siteConfig) => {
             mode={commonData?.menuInventoryData[0]?.mode}
             config={componentConfig.config}
             business={commonData.aboutData}
+            id={componentConfig?.id || 'menu'}
           />
         </>
       );

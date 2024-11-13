@@ -1,12 +1,12 @@
 {
-  "name": "Contact",
+  "name": "Catering",
   "basicInfo": {
-    "path": "#contact",
+    "path": "#catering",
     "seoPageTitle": "",
     "pageDescription": ""
   },
   "navVisibility": {
-    "order": 12
+    "order": 3
   },
   "advancedSettings": {
     "fetchingStrategy": "static",
@@ -20,8 +20,8 @@
   },
   "pageComponents": [
     {
-      "componentName": "ContactPageLayout",
-      "configName": "contactPageLayoutConfig"
+      "componentName": "Menu",
+      "configName": "menuConfigA"
     }
   ]
 }

@@ -1,8 +1,16 @@
 export const NavItem = {
   baseStyle: {
     px: 4,
-    fontSize: ['xs', 'sm', 'md'],
-    color: 'dark',
+    fontSize: ['xl', 'sm', 'md'],
+    color: ['primary'],
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: 'wide',
+    transition: 'all 0.3s ease',
+    _hover: {
+      color: 'primary',
+      transition: 'all 0.3s ease',
+    },
   },
   variants: {
     navRight: {}, // variant for right side nav items
@@ -21,7 +29,6 @@ export const NavItem = {
       color: 'white',
       px: 4,
       fontWeight: '900',
-      fontFamily: 'lato',
       textTransform: 'uppercase',
       letterSpacing: 'wide',
 

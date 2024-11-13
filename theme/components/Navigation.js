@@ -11,7 +11,7 @@ export const Navigation = {
       alignItems: 'center',
     },
     navItemsGridItem: {
-      colSpan: [0, 0, 8], // Hide nav items on mobile, show on larger screens
+      colSpan: [0, 0, 10], // Hide nav items on mobile, show on larger screens
       display: ['none', 'none', 'flex'],
       justifyContent: 'center',
     },
@@ -21,7 +21,7 @@ export const Navigation = {
       justifyContent: 'flex-end',
     },
     alternateGridItem: {
-      colSpan: [0, 0, 2], // Only show this on larger screens
+      colSpan: [0, 0, 0], // Only show this on larger screens
       display: ['none', 'none', 'flex'],
       justifyContent: 'flex-end',
     },
@@ -40,9 +40,10 @@ export const Navigation = {
       left: 0,
       width: '100vw',
       height: '100vh',
-      bg: 'gray.800',
-      zIndex: 10, // Menu is underneath the hamburger icon
+      bg: 'background',
+      zIndex: 9999, // Menu is underneath the hamburger icon
       display: 'flex',
+      flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
     },
@@ -54,7 +55,7 @@ export const Navigation = {
     },
     hamburger: {
       size: 24,
-      color: 'red',
+      color: '#C99830',
     },
     mobileMenuContent: {
       flexDirection: 'column',

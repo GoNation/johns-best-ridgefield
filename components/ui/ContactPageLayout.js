@@ -11,7 +11,6 @@ import HoursDisplay from 'components/hours/hoursDisplay';
 const ContactPageLayout = ({ aboutData, fields, iframe, config, hideMap }) => {
   return (
     <Box>
-      <HoursByDay hours={aboutData.hours} />
       <Flex
         flexDir={['column', 'column', 'column', 'row']}
         py={[0]}
@@ -39,6 +38,7 @@ const ContactPageLayout = ({ aboutData, fields, iframe, config, hideMap }) => {
         <Box flex={1} display={hideMap ? 'none' : 'block'}>
           {!hideMap && <MapSection aboutData={aboutData} iframeURL={iframe} />}
         </Box>
+        <HoursByDay hours={aboutData.hours} />
       </Flex>
     </Box>
   );

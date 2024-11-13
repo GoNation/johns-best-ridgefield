@@ -2,8 +2,6 @@ export const Section = {
   baseStyle: {
     container: {
       pb: 4,
-      maxWidth: 1400,
-      mx: 'auto',
     },
     imageContainer: {
       position: 'relative',
@@ -33,12 +31,15 @@ export const Section = {
       mt: 0,
       pt: 0,
       mb: [4, 4, 4, 8],
-      color: 'primary',
+      color: 'background',
+      bg: 'primary',
       fontWeight: 600,
       textAlign: 'center',
       fontFamily: 'body',
       letterSpacing: 2,
       textTransform: 'uppercase',
+      py: 4,
+      textShadow: 0,
     },
     description: {
       fontSize: 'xs',

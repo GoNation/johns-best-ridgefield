@@ -1,5 +1,12 @@
 export const Heading = {
-  baseStyle: {},
+  baseStyle: {
+    fontWeight: [500, 800],
+    fontSize: ['2xl', '3xl', '4xl', '5xl'],
+    // a glass elegant text shadow
+    textTransform: 'uppercase',
+    letterSpacing: 2,
+    color: 'primary',
+  },
   variants: {
     smallTitle: {
       fontSize: ['lg', 'xl', '', '2xl'],
@@ -22,8 +29,6 @@ export const Heading = {
       mt: 3,
       textTransform: 'none',
       letterSpacing: 2,
-      textTransform: 'uppercase',
-      fontSize: '2xl',
     },
     bannerLarge: {
       color: 'dark',

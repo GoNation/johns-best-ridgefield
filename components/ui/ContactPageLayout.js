@@ -12,11 +12,12 @@ const ContactPageLayout = ({ aboutData, fields, iframe, config, hideMap }) => {
   return (
     <Box>
       <Flex
-        flexDir={['column', 'column', 'column', 'row']}
+        flexDir={['column', 'column', 'row', '', 'row']}
         py={[0]}
         align={['stretch', '', '', 'center']}
         backgroundColor={'secondary'}
         id="contact"
+        flexWrap={'wrap'}
       >
         <Box
           p={4}
@@ -38,7 +39,15 @@ const ContactPageLayout = ({ aboutData, fields, iframe, config, hideMap }) => {
         <Box flex={1} display={hideMap ? 'none' : 'block'}>
           {!hideMap && <MapSection aboutData={aboutData} iframeURL={iframe} />}
         </Box>
-        <HoursByDay hours={aboutData.hours} />
+        <Box
+          p={4}
+          minW={500}
+          width={'100%'}
+          borderTop={'1px solid'}
+          borderColor={'white'}
+        >
+          <HoursByDay hours={aboutData.hours} />
+        </Box>
       </Flex>
     </Box>
   );

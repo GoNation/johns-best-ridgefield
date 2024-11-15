@@ -17,6 +17,7 @@ export const SideBySideImage = {
       position: 'relative',
       zIndex: 99,
       my: [4, 0],
+      px: [0, 2, 4, 8],
       //   maxWidth: 'xl',
       //   mx: 'auto',
     },

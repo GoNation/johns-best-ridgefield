@@ -110,7 +110,7 @@ const MenuItem = ({ item, withDollar, sectionImagesCount, variant = null }) => {
           {item.variants?.length === 1 && (
             <Price withDollar={true} variants={item.variants} />
           )}
-          {item.variants?.length > 1 || item.variants?.[0]?.label !== '' ? (
+          {item.variants?.length > 1 ? (
             <PriceWithVariants
               withDollar={withDollar}
               variants={item.variants}

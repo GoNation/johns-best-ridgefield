@@ -5,6 +5,7 @@ export const Price = {
       color: 'dark',
       fontFamily: 'body',
       mr: 2,
+      fontWeight: 'bold',
     },
     price: {
       fontSize: 'sm',
